@@ -23,7 +23,7 @@ import { CustomPreloadingStrategy } from './custom-preloading-strategy';
  *       [provideSimplePostAuthService] called
  *       [provideSimplePostAuthService] initializer called
  *       [SimplePostAuthService] started at 12:32:04 PM
- *       (5 seconds later)
+ *       (preloader runs 5 seconds later)
  *       [provideContactUsService] called
  *       [provideContactUsService] initializer called
  *       [ContactUsService] constructor called
