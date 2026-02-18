@@ -17,7 +17,7 @@ import { CustomPreloadingStrategy } from './custom-preloading-strategy';
  *      - We see this console output:
  *        [acmeAuthGuard] isAuthenticated: false
  *      - The app redirects to http://localhost:4200/logged-out
- * 4. Click "Login" button and observe console output
+ * 4. Click the "Login" button and observe console output
  *    >> As expected we see this console output:
  *       [acmeAuthGuard] isAuthenticated: true
  *       [provideSimplePostAuthService] called
