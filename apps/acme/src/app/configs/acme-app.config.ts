@@ -9,7 +9,8 @@ import { CustomPreloadingStrategy } from './custom-preloading-strategy';
 
 /**
  * Steps:
- * 1. Launch app: npm start
+ * 1. Launch app:
+ *    > npm start
  * 2. Create new browser tab and open Dev Tools > Console
  * 3. Load app in tab: http://localhost:4200/
  *    >> As expected:
