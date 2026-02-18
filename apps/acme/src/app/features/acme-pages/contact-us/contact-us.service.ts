@@ -12,6 +12,10 @@ import { BehaviorSubject } from 'rxjs';
 export class ContactUsService implements OnDestroy {
   readonly status$ = new BehaviorSubject<string>('Not started');
 
+  constructor() {
+    console.log('[ContactUsService] constructor called');
+  }
+
   start(): void {
     const now = new Date();
     const timeStr = now.toLocaleTimeString();

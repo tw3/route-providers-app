@@ -1,12 +1,10 @@
 import { Routes } from '@angular/router';
 import { provideSimplePostAuthService } from '../../services/simple-post-auth.service';
-import { provideContactUsService } from './contact-us/contact-us.service';
 
 export const acmePostAuthRoutes: Routes = [
   {
     path: '',
-    loadComponent: () =>
-      import('./acme-pages.component').then((c) => c.AcmePagesComponent),
+    loadComponent: () => import('./acme-pages.component').then((c) => c.AcmePagesComponent),
     providers: [provideSimplePostAuthService()],
     children: [
       {
@@ -16,17 +14,14 @@ export const acmePostAuthRoutes: Routes = [
       },
       {
         path: 'home',
-        loadComponent: () =>
-          import('./home/home.component').then((c) => c.HomePageComponent),
+        loadComponent: () => import('./home/home.component').then((c) => c.HomePageComponent),
         data: {
           preload: true,
         },
       },
       {
         path: 'contact-us',
-        loadComponent: () =>
-          import('./contact-us/contact-us.component').then((c) => c.ContactUsPageComponent),
-        providers: [provideContactUsService()],
+        loadChildren: () => import('./contact-us/contact-us.routes').then((m) => m.contactUsRoutes),
         data: {
           preload: true,
         },

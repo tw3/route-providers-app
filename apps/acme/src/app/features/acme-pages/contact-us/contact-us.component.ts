@@ -12,4 +12,8 @@ import { ContactUsService } from './contact-us.service';
 })
 export class ContactUsPageComponent {
   protected readonly contactUsService = inject(ContactUsService);
+
+  constructor() {
+    console.log('[ContactUsPageComponent] constructor called');
+  }
 }
