@@ -1,0 +1,43 @@
+{
+  "name": "route-providers-app",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "nx serve acme",
+    "build": "nx build acme",
+    "test": "nx test acme"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "21.1.4",
+    "@angular/common": "21.1.4",
+    "@angular/compiler": "21.1.4",
+    "@angular/core": "21.1.4",
+    "@angular/forms": "21.1.4",
+    "@angular/platform-browser": "21.1.4",
+    "@angular/platform-browser-dynamic": "21.1.4",
+    "@angular/router": "21.1.4",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.15.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "21.1.4",
+    "@angular-devkit/core": "21.1.4",
+    "@angular-devkit/schematics": "21.1.4",
+    "@angular/build": "21.1.4",
+    "@angular/cli": "~21.1.0",
+    "@angular/compiler-cli": "21.1.4",
+    "@nx/angular": "22.5.1",
+    "@nx/js": "22.5.1",
+    "@nx/web": "22.5.1",
+    "@nx/workspace": "22.5.1",
+    "@schematics/angular": "21.1.4",
+    "@swc-node/register": "~1.11.1",
+    "@swc/core": "~1.15.5",
+    "@swc/helpers": "~0.5.18",
+    "nx": "22.5.1",
+    "prettier": "~3.6.2",
+    "typescript": "~5.9.0"
+  }
+}
