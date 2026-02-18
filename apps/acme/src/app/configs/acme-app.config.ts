@@ -39,8 +39,9 @@ import { CustomPreloadingStrategy } from './custom-preloading-strategy';
  *       [ContactUsService] constructor called
  *       [ContactUsService] started at 12:35:10 PM
  *
- * The CustomPreloadingStrategy preloader ignores the canMatch guard and re-triggers
- * the environment initializers under acmePostAuthRoutes
+ * After the redirect to /logged-out the CustomPreloadingStrategy preloader
+ * ignores the canMatch guard and re-triggers the environment initializers
+ * under acmePostAuthRoutes
  *
  * If you comment out withPreloading() below the environment initializers are
  * not re-triggered on logout
